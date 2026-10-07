@@ -14,7 +14,7 @@ import waifish_selector from '../../images/waifish_selector.png'
 import tp_selector from '../../images/Title_TP.png'
 import steam_logo from '../../images/steam-logo.png'
 import Central_text from '../../components/Central_text/Central_text.jsx'
-import tp_screenshot from '../../images/TP_screenshot.png'
+import tp_screenshot from '../../images/TP_Screenshot.png'
 
 function Other() {
   const [selectedProject, setSelectedProject] = useState(null);
