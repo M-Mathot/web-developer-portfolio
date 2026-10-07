@@ -11,10 +11,10 @@ import waifishscreenshot from '../../images/Waifish_screen2.webp'
 import data from '../../data/other.json'
 import Project_selector from '../../components/Project_selector/Project_selector.jsx'
 import waifish_selector from '../../images/waifish_selector.png'
-import uk_selector from '../../images/uk_site_format.png'
+import tp_selector from '../../images/Title_TP.png'
 import steam_logo from '../../images/steam-logo.png'
 import Central_text from '../../components/Central_text/Central_text.jsx'
-import uk_screenshot from '../../images/Uk_screenshot.png'
+import tp_screenshot from '../../images/TP_screenshot.png'
 
 function Other() {
   const [selectedProject, setSelectedProject] = useState(null);
@@ -35,7 +35,7 @@ function Other() {
 
         <Project_selector
           onClick={() => setSelectedProject(2)}
-          imgsrc={uk_selector}
+          imgsrc={tp_selector}
           isActive={selectedProject === 2}
           hasSelection={selectedProject !== null}
         />
@@ -73,7 +73,7 @@ function Other() {
       <div className={selectedProject === 2 ? "content visible" : "content"}>
 
         <Central_text title={data.unknowncharactertitle} text={data.unknowncharactertext}></Central_text>
-        <img  className ='imguk' src={uk_screenshot}></img>
+        <img  className ='imguk' src={tp_screenshot}></img>
 
 
       </div>
